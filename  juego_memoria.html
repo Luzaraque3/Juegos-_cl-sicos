@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CANVAS Memoria Números</title>
+<title>Memoria Números</title>
 <style>
 body{
 	width:960px;
@@ -12,8 +12,8 @@ h1{
 	text-align:center;
 }
 #miCanvas{
-	border:dotted 2px yellow;
-	background:green;	
+	border:dotted 2px rgb(49, 128, 3);
+	background:rgb(188, 44, 255);	
 }
 </style>
 <script>
@@ -21,8 +21,8 @@ var ctx;
 var primerCarta = true;
 var cartaPrimera;
 var cartaSegunda;
-var colorFrente = "yellow";
-var colorAtras = "blue";
+var colorFrente = "red";
+var colorAtras = "violet";
 var colorCanvas = "green";
 var cartaLon = 30;
 var teclas_array = new Array();
@@ -136,7 +136,7 @@ function pinta(c){
 	ctx.fillStyle = colorFrente;
 	ctx.fillRect(c.x, c.y, cartaAncho, cartaAlto);
 	ctx.font = "bold 40px Comic";
-	ctx.fillStyle = "red";
+	ctx.fillStyle = "yellow";
 	ctx.fillText(String(c.info),c.x+cartaAncho*0.5-10,c.y+cartaAlto*0.5+10);
 }
 function volteaCarta(){
